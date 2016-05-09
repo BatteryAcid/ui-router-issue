@@ -27,10 +27,18 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
         
         <!-- Javascript app -->
-        
+        <script src="assets/base.js"></script>
 
     </head>
     <body>
-       
+        Home Template Links:<br />
+        <p>
+          <a ui-sref="home">home</a><br />
+          <a ui-sref="base.profile.details({id: 3})">Working profile</a><br />
+          <a ui-sref="base.profile.details({id: 5})">Broken profile</a><br />
+        </p>
+
+        <!-- all base views are here -->
+        <ui-view></ui-view>
     </body>
 </html>
